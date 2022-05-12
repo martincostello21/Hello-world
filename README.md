@@ -4,4 +4,4 @@ My very own GitHub Repository
 
 I enjoy exploring coding, github actions, and python
 
-I love :coffee:
+I love :coffee: and :pizza:
