@@ -1,4 +1,4 @@
-attempt at creating a workflow-dispatch... hear goes
+An attempt at creating a workflow-dispatch... hear goes
 
 Running a workflow using the REST API
 When using the REST API, you configure the inputs and ref as request body parameters. If the inputs are omitted, the default values defined in the workflow file are used.
