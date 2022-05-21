@@ -27,4 +27,4 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Send greeting
-      run: echo "Hello this is manual.yml on Costello branch ${{ github.event.inputs.name }}"
+      run: echo "Hello, manual.yml file was run ${{ github.event.inputs.name }}"
