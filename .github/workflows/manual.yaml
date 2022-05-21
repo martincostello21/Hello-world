@@ -8,8 +8,8 @@ on:
   workflow_dispatch:
   push:
   pull_request:
-    branches: C*
-
+    branches:
+      - Costello-2560
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
