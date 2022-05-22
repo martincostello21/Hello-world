@@ -6,3 +6,5 @@ When using the REST API, you configure the inputs and ref as request body parame
 Note: You can define up to 10 inputs for a workflow_dispatch event.
 
 For more information about using the REST API, see the "Create a workflow dispatch event."
+
+Added a line
