@@ -23,15 +23,14 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
-    if: ${{ github.event.input.regionFlag == 'US'
+    if: ${{ github.event.input.regionFlag == 'US' }}
     steps:
     # Runs a single command using the runners shell
-    - name:m
-      run: echo "Hello, USA"
-    elif: $[[ github.event.input.regionFlag -- 'EU'
-    steps:
-    - name:
-      run: echo "Hello Europe" 
+      - name: print location US
+        run: echo "Hello, USA"
+    elif: $[[ github.event.input.regionFlag -- 'EU' }}
+      - name: print location EU
+        run: echo "Hello Europe" 
     else: 
-    - name: 
-      run: echo "Error"
+      - name: print error 
+        run: echo "Error"
