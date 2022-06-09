@@ -13,20 +13,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Need to add git-checkout function
-      - run: ./github/workflows/bash.sh US $GITHUB_REF
+      - run: ./github/workflows/bash.sh US #$GITHUB_REF
   eu:
     if: ${{ inputs.region == 'EU' }}
     runs-on: ubuntu-latest
     steps:
           # Need to add git-checkout function
-      - run: ./github/workflows/bash.sh EU $GITHUB_REF
+      - run: ./github/workflows/bash.sh EU #$GITHUB_REF
   bad-country-input:
     if: ${{ inputs.region != 'US' && inputs.region != 'EU '}}
     runs-on: ubuntu-latest
     steps:
       - run: echo 'input.region invalid; choose from US or EU' && exit 1
-  production:
-    if: ${{ GITHUB_REF == 'ref/heads/production' }}
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "I'm in prod"
+  # production:
+    # if: ${{ GITHUB_REF == 'ref/heads/production' }}
+    # runs-on: ubuntu-latest
+    # steps:
+      # - run: echo "I'm in prod"
