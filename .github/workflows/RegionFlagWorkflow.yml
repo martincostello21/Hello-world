@@ -21,7 +21,7 @@ jobs:
           # Need to add git-checkout function
       - run: ./github/workflows/bash.sh EU #$GITHUB_REF
   bad-country-input:
-    if: ${{ inputs.region != 'US' && inputs.region != 'EU '}}
+    if: ${{ inputs.region != 'US' && inputs.region != 'EU' }}
     runs-on: ubuntu-latest
     steps:
       - run: echo 'input.region invalid; choose from US or EU' && exit 1
