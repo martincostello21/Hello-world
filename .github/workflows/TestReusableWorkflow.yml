@@ -1,0 +1,17 @@
+name: Reusable workflow
+
+on:
+  workflow_call:
+    inputs:
+      lane:
+        required: true
+        type: string
+
+jobs:
+  fastlane:
+    name: Fastlane
+    runs-on: ubuntu-latest
+    steps:
+      - id: step1
+        run: echo ${{ inputs.lane }}
+        # When called workflow will read input from the repository in which its called in
