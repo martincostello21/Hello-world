@@ -1,0 +1,28 @@
+name: FAA Manual Workflow
+
+on: 
+  workflow_dispatch:
+  inputs: 
+    regionFlag: 
+      type: string
+      required: true 
+      despcription: PROD region flag in capital letters is needed for script to work. US or EU?
+
+
+
+jobs:
+  Floodlight Android App:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Source Code Checkout 
+        uses: actions/checkout@v2
+      
+      - name: Setup JDK 11 
+        uses: actions/setup-java@v2
+        with: 
+          java-version: '11'
+          #cache: gradle
+
+      - name: Gradle Build
+        #run: RISPixa/floodlight-android-app/pipeline_scripts/build_prod.sh@PM/DVOPS-2578
+        #run: echo RISPixa/floodlight-android-app/pipeline_scripts/build_prod.sh@PM/DVOPS-2578
