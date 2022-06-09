@@ -28,9 +28,9 @@ jobs:
     # Runs a single command using the runners shell
       - name: print location US
         run: echo "Hello, USA"
-    elif: $[[ github.event.input.regionFlag -- 'EU' }}
-      - name: print location EU
-        run: echo "Hello Europe" 
-    else: 
-      - name: print error 
+      elif: $[[ github.event.input.regionFlag -- 'EU' }}
+        - name: print location EU
+          run: echo "Hello Europe"
+      else:
+        - name: print error
         run: echo "Error"
