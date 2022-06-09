@@ -12,17 +12,26 @@ jobs:
     if: ${{ inputs.region == 'US' }}
     runs-on: ubuntu-latest
     steps:
-      # Need to add git-checkout function
+      - uses: actions/checkout@v1 #adds git-checkout function
+
+      - name: Setup JDK 11
+        uses: actions/setup-java@v1
+        with:
+          java-version: '11'
+
       - run: echo 'fuck yeah 'US' # .github/workflows/bash.sh US #$GITHUB_REF
   eu:
     if: ${{ inputs.region == 'EU' }}
     runs-on: ubuntu-latest
     steps:
-          # Need to add git-checkout function
+      - uses: actions/checkout@v1 #adds git-checkout function
+      - name: Setup JDK 11
+        uses: actions/setup-java@v1
+        with:
+          java-version: '11'
       - run: echo 'fuck yeah EU' #.github/workflows/bash.sh EU #$GITHUB_REF
   bad-country-input:
-    if: ${{ inputs.region != 'US' && inputs.region != 'EU' }}
-    runs-on: ubuntu-latest
+    if: ${{ inputs.region != 'US'&& inputs.region != 'EU' }}
     steps:
       - run: echo 'input.region invalid; choose from US or EU' && exit 1
   # production:
