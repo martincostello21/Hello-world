@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Need to add git-checkout function
-      - run: echo 'fuck yeah 'US' # .github/workflows/bash.sh US #$GITHUB_REF
+      - run: echo 'fuck yeah US' #.github/workflows/bash.sh EU #$GITHUB_REF
   eu:
     if: ${{ inputs.region == 'EU' }}
     runs-on: ubuntu-latest
