@@ -7,6 +7,7 @@ on:
         type: string
         required: true
         description: US or EU?
+
 jobs:
   us:
     if: ${{ inputs.region == 'US' }}
@@ -18,7 +19,7 @@ jobs:
     if: ${{ inputs.region == 'EU' }}
     runs-on: ubuntu-latest
     steps:
-          # Need to add git-checkout function
+      # Need to add git-checkout function
       - run: echo 'fuck yeah EU' #.github/workflows/bash.sh EU #$GITHUB_REF
   bad-country-input:
     if: ${{ inputs.region != 'US' && inputs.region != 'EU' }}
