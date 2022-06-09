@@ -1,4 +1,4 @@
-name: regional_dispatch
+name: regional_dispatch_template
 
 on:
   workflow_dispatch:
