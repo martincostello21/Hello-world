@@ -1,12 +1,12 @@
 #!/bin/bash
 set -ex
-regionFlag=$1
-if [[ $regionFlag == "US" ]]; then
-    echo $regionFlag THIS IS THE regionFlag of US
+region=$1
+if [[ $region == "US" ]]; then
+    echo $region THIS IS THE region of US
 fi
-if [[ $regionFlag == "EU" ]]; then
-    echo $regionFlag THIS IS THE regionFlag of EU
+if [[ $region == "EU" ]]; then
+    echo $region THIS IS THE region of EU
 fi
 if [[ $2 == "heads/ref/somebranchname"]]; then
-    echo "I'm on the somebrnachname branh"
+    echo "I'm on the somebranchname branch"
 fi
