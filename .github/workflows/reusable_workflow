@@ -1,0 +1,18 @@
+name: test_reuseable_workflow
+
+on:
+  workflow_call:
+    inputs:
+      env:
+        required: true
+        type: string
+        description: which pipeline scripts to run
+      product_type:
+        required: false
+        type: string
+        description: other inputs would go here
+
+jobs:
+  deploy:
+  runs-on: 
+  gradlew args:
