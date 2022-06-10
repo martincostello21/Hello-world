@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       #actions/checkout@v2 #Need to add git-checkout function
-      - run: echo 'fuck yeah US' #.github/workflows/bash.sh US #$GITHUB_REF
+      - run: .github/workflows/bash.sh US #$GITHUB_REF
   eu:
     if: ${{ inputs.region == 'EU' }}
     runs-on: ubuntu-latest
