@@ -6,6 +6,7 @@ on:
       region:
         type: string
         required: true
+        default: US
         description: US or EU?
       productionLabel:
         type: string
