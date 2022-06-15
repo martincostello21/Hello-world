@@ -7,6 +7,11 @@ on:
         type: string
         required: true
         description: US or EU?
+      productionLabel:
+        type: string
+        required: true
+        default: true
+        description: true for production runs or false for non-production
 
 jobs:
   us:
