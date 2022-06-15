@@ -25,7 +25,7 @@ jobs:
     if: ${{ inputs.region == 'EU' }}
     runs-on: ubuntu-latest
     steps:
-      - uses: action/checkout@v3
+      - uses: actions/checkout@v3
       # actions/checkout@v2 - Need to add git-checkout function
       - run: .github/workflows/bash.sh EU #$GITHUB_REF
   bad-country-input:
