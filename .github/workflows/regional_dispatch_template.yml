@@ -39,7 +39,7 @@ on:
         description: releaseFile description goes here
       releaseTrack:
         type: string
-        required: false
+        required: true
         default: false
         description: releaseTrack description goes here
 
