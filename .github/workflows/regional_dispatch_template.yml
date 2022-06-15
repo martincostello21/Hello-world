@@ -12,6 +12,36 @@ on:
         required: true
         default: true
         description: true for production runs or false for non-production
+      apkPath:
+        type: string
+        required: false
+        default: false
+        description: apkPatch description goes here
+      testerGroup:
+        type: string
+        required: false
+        default: false
+        description: testerGroup description goes here
+      releaseNotes:
+        type: string
+        required: false
+        default: false
+        description: releaseNotes description goes here
+      packageName:
+        type: string
+        required: false
+        default: false
+        description: packageName description goes here
+      releaseFile:
+        type: string
+        required: false
+        default: false
+        description: releaseFile description goes here
+      releaseTrack:
+        type: string
+        required: false
+        default: false
+        description: releaseTrack description goes here
 
 jobs:
   us:
