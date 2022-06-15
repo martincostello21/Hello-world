@@ -41,7 +41,7 @@ on:
       releaseTrack:
         type: string
         required: true
-        default: false
+        default: 'false'
         description: releaseTrack description goes here
 
 jobs:
