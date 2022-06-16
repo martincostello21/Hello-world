@@ -30,8 +30,8 @@ on:
         description: releaseNotes description goes here
       packageName:
         type: string
-        required: false
-        default: 'false'
+        required: true
+        default: 'your leaning pig rocks'
         description: packageName description goes here
       releaseFile:
         type: string
